@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renuga Construction | Building Your Vision</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F59E0B',
+                        primaryDark: '#D97706',
+                        secondary: '#1F2937',
+                        dark: '#111827',
+                        light: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-600 antialiased overflow-x-hidden bg-white">
+
+    <!-- Header / Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm py-4">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded group-hover:bg-primaryDark transition-colors">
+                    <i class="fa-solid fa-building text-white text-xl"></i>
+                </div>
+                <span class="font-heading font-bold text-2xl text-dark tracking-tight">Renuga<span class="text-primary">.</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="font-medium text-dark hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="font-medium text-gray-600 hover:text-primary transition-colors">About Us</a>
+                <a href="#services" class="font-medium text-gray-600 hover:text-primary transition-colors">Services</a>
+                <a href="#projects" class="font-medium text-gray-600 hover:text-primary transition-colors">Projects</a>
+                <a href="#why-us" class="font-medium text-gray-600 hover:text-primary transition-colors">Why Choose Us</a>
+                <a href="#contact" class="font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:block">
+                <a href="#quote" class="bg-primary hover:bg-primaryDark text-white px-6 py-2.5 rounded font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 inline-block">Get a Free Quote</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col py-4 px-6 space-y-4">
+                <a href="#home" class="mobile-link font-medium text-dark">Home</a>
+                <a href="#about" class="mobile-link font-medium text-gray-600">About Us</a>
+                <a href="#services" class="mobile-link font-medium text-gray-600">Services</a>
+                <a href="#projects" class="mobile-link font-medium text-gray-600">Projects</a>
+                <a href="#why-us" class="mobile-link font-medium text-gray-600">Why Choose Us</a>
+                <a href="#contact" class="mobile-link font-medium text-gray-600">Contact</a>
+                <a href="#quote" class="mobile-link bg-primary text-white px-4 py-2 rounded font-semibold text-center mt-2">Get a Free Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-24 pb-12 lg:pt-0 lg:pb-0 min-h-screen flex items-center hero-bg">
+        <div class="container mx-auto px-4 md:px-8 relative z-10 pt-16">
+            <div class="max-w-3xl text-white" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                    Building Your Vision,<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-300">Creating Your Future</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed">
+                    Renuga Construction delivers reliable, high-quality construction solutions with excellence, safety and customer satisfaction at every stage.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#quote" class="bg-primary hover:bg-primaryDark text-white px-8 py-4 rounded font-bold text-lg text-center transition-all shadow-lg shadow-primary/30 transform hover:-translate-y-1">Get a Free Quote</a>
+                    <a href="#projects" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded font-bold text-lg text-center transition-all transform hover:-translate-y-1">View Our Projects</a>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-white/20">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <span class="font-medium">Quality Construction</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <span class="font-medium">Experienced Team</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <span class="font-medium">On-Time Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20 lg:py-28 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+                <!-- Image Side -->
+                <div class="lg:w-1/2 w-full relative" data-aos="fade-right">
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Construction Site" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-xl -z-10 hidden md:block"></div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 border-4 border-gray-200 rounded-xl -z-10 hidden md:block"></div>
+                </div>
+                
+                <!-- Text Side -->
+                <div class="lg:w-1/2 w-full" data-aos="fade-left">
+                    <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-orange-50 border border-orange-100">
+                        <span class="text-primary font-semibold tracking-wide text-sm uppercase">About Us</span>
+                    </div>
+                    <h2 class="font-heading text-4xl lg:text-5xl font-bold text-dark mb-6 leading-tight">
+                        Building With Trust.<br>Building With <span class="text-primary">Excellence.</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Renuga Construction provides reliable construction and civil engineering solutions with a strong focus on quality materials, skilled workmanship, safety, and customer satisfaction. We bring visions to life by maintaining the highest standards in every project.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-primary"><i class="fa-solid fa-circle-check text-xl"></i></div>
+                            <div>
+                                <h4 class="font-heading font-semibold text-dark text-lg">Experienced Professionals</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-primary"><i class="fa-solid fa-circle-check text-xl"></i></div>
+                            <div>
+                                <h4 class="font-heading font-semibold text-dark text-lg">Quality Materials</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-primary"><i class="fa-solid fa-circle-check text-xl"></i></div>
+                            <div>
+                                <h4 class="font-heading font-semibold text-dark text-lg">Transparent Process</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-primary"><i class="fa-solid fa-circle-check text-xl"></i></div>
+                            <div>
+                                <h4 class="font-heading font-semibold text-dark text-lg">Reliable Execution</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-dark hover:bg-secondary text-white px-8 py-3.5 rounded font-semibold transition-colors">
+                        Know More About Us <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 lg:py-28 bg-light">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-primary font-semibold tracking-wide text-sm uppercase mb-2 block">What We Do</span>
+                <h2 class="font-heading text-4xl lg:text-5xl font-bold text-dark mb-4">Our Construction Services</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 service-card group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-orange-50 text-primary rounded-lg flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-4">Residential Construction</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Individual houses</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Villas</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Modern homes</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 service-card group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-orange-50 text-primary rounded-lg flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-4">Commercial Construction</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Offices</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Shops</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Commercial buildings</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 service-card group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-orange-50 text-primary rounded-lg flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-4">Building Renovation</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Renovation</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Remodeling</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Structural improvements</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 service-card group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-orange-50 text-primary rounded-lg flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-4">Civil Engineering</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Structural works</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Concrete works</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Foundation works</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 service-card group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-orange-50 text-primary rounded-lg flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-4">Interior & Finishing</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Flooring</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Painting</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Finishing works</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 service-card group" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-16 h-16 bg-orange-50 text-primary rounded-lg flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-4">Turnkey Construction</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Complete project execution</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i>Planning to handover</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 lg:py-28 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-up">
+                <div class="max-w-2xl">
+                    <span class="text-primary font-semibold tracking-wide text-sm uppercase mb-2 block">Portfolio</span>
+                    <h2 class="font-heading text-4xl lg:text-5xl font-bold text-dark">Our Recent Projects</h2>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="#" class="text-primary font-semibold hover:text-dark transition-colors inline-flex items-center gap-2">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800" alt="Modern Residential Villa" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded">Residential</div>
+                    </div>
+                    <div class="p-6 border border-t-0 border-gray-100 rounded-b-xl">
+                        <h3 class="font-heading text-xl font-bold text-dark mb-2">Modern Residential Villa</h3>
+                        <p class="text-gray-500 mb-4 text-sm line-clamp-2">A luxurious, custom-built villa with modern architectural details and premium finishing.</p>
+                        <a href="#" class="text-dark font-semibold hover:text-primary transition-colors text-sm uppercase tracking-wide">View Project <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="Contemporary Home" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded">Residential</div>
+                    </div>
+                    <div class="p-6 border border-t-0 border-gray-100 rounded-b-xl">
+                        <h3 class="font-heading text-xl font-bold text-dark mb-2">Contemporary Home</h3>
+                        <p class="text-gray-500 mb-4 text-sm line-clamp-2">Elegant family home designed for comfort with open spaces and natural lighting.</p>
+                        <a href="#" class="text-dark font-semibold hover:text-primary transition-colors text-sm uppercase tracking-wide">View Project <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Commercial Building" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-dark text-white text-xs font-bold px-3 py-1 rounded">Commercial</div>
+                    </div>
+                    <div class="p-6 border border-t-0 border-gray-100 rounded-b-xl">
+                        <h3 class="font-heading text-xl font-bold text-dark mb-2">Commercial Building</h3>
+                        <p class="text-gray-500 mb-4 text-sm line-clamp-2">A state-of-the-art commercial complex designed for multiple corporate tenants.</p>
+                        <a href="#" class="text-dark font-semibold hover:text-primary transition-colors text-sm uppercase tracking-wide">View Project <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800" alt="Luxury Residence" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded">Residential</div>
+                    </div>
+                    <div class="p-6 border border-t-0 border-gray-100 rounded-b-xl">
+                        <h3 class="font-heading text-xl font-bold text-dark mb-2">Luxury Residence</h3>
+                        <p class="text-gray-500 mb-4 text-sm line-clamp-2">High-end residential project emphasizing elegant aesthetics and robust structural integrity.</p>
+                        <a href="#" class="text-dark font-semibold hover:text-primary transition-colors text-sm uppercase tracking-wide">View Project <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="500">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=800" alt="Renovation Project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded">Renovation</div>
+                    </div>
+                    <div class="p-6 border border-t-0 border-gray-100 rounded-b-xl">
+                        <h3 class="font-heading text-xl font-bold text-dark mb-2">Renovation Project</h3>
+                        <p class="text-gray-500 mb-4 text-sm line-clamp-2">Complete remodeling of an old structure into a modern, energy-efficient building.</p>
+                        <a href="#" class="text-dark font-semibold hover:text-primary transition-colors text-sm uppercase tracking-wide">View Project <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white" data-aos="fade-up" data-aos-delay="600">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Office Building" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-dark text-white text-xs font-bold px-3 py-1 rounded">Commercial</div>
+                    </div>
+                    <div class="p-6 border border-t-0 border-gray-100 rounded-b-xl">
+                        <h3 class="font-heading text-xl font-bold text-dark mb-2">Office Building</h3>
+                        <p class="text-gray-500 mb-4 text-sm line-clamp-2">A modern workspace environment built with sustainable materials and smart design.</p>
+                        <a href="#" class="text-dark font-semibold hover:text-primary transition-colors text-sm uppercase tracking-wide">View Project <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-20 lg:py-28 bg-dark text-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-primary font-semibold tracking-wide text-sm uppercase mb-2 block">Our Advantages</span>
+                <h2 class="font-heading text-4xl lg:text-5xl font-bold mb-4">Why Choose Renuga Construction?</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                <!-- Point 1 -->
+                <div class="flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold mb-2">Quality First</h4>
+                        <p class="text-gray-400">We use only high-quality materials and ensure top-notch workmanship in every detail.</p>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold mb-2">Experienced Team</h4>
+                        <p class="text-gray-400">Our skilled professionals and experienced workers deliver excellence on every site.</p>
+                    </div>
+                </div>
+                <!-- Point 3 -->
+                <div class="flex gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold mb-2">On-Time Completion</h4>
+                        <p class="text-gray-400">Through efficient planning and execution, we ensure your project is completed on schedule.</p>
+                    </div>
+                </div>
+                <!-- Point 4 -->
+                <div class="flex gap-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold mb-2">Transparent Pricing</h4>
+                        <p class="text-gray-400">Clear and honest project estimates with no hidden costs along the way.</p>
+                    </div>
+                </div>
+                <!-- Point 5 -->
+                <div class="flex gap-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold mb-2">Safety Focused</h4>
+                        <p class="text-gray-400">Strong emphasis on construction-site safety for our workers and clients.</p>
+                    </div>
+                </div>
+                <!-- Point 6 -->
+                <div class="flex gap-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-14 h-14 shrink-0 rounded-full bg-primary/20 text-primary flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold mb-2">Customer Satisfaction</h4>
+                        <p class="text-gray-400">A dedicated client-focused approach from initial planning to final handover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Process -->
+    <section class="py-20 lg:py-28 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-primary font-semibold tracking-wide text-sm uppercase mb-2 block">How We Work</span>
+                <h2 class="font-heading text-4xl lg:text-5xl font-bold text-dark mb-4">Our Construction Process</h2>
+                <p class="text-gray-600">A streamlined approach ensuring quality and efficiency.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line -->
+                <div class="hidden lg:block absolute top-10 left-0 w-full h-1 bg-gray-200 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <!-- Step 1 -->
+                    <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-primary rounded-full flex items-center justify-center mb-6 shadow-lg text-2xl font-bold text-dark font-heading">01</div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-2">Consultation</h4>
+                        <p class="text-sm text-gray-500">Discuss requirements and project goals.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-gray-200 rounded-full flex items-center justify-center mb-6 shadow-lg text-2xl font-bold text-gray-400 font-heading hover:border-primary transition-colors cursor-default">02</div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-2">Planning & Design</h4>
+                        <p class="text-sm text-gray-500">Prepare the project plan, design and estimate.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-gray-200 rounded-full flex items-center justify-center mb-6 shadow-lg text-2xl font-bold text-gray-400 font-heading hover:border-primary transition-colors cursor-default">03</div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-2">Construction</h4>
+                        <p class="text-sm text-gray-500">Execute the project using quality materials and skilled workmanship.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="w-20 h-20 mx-auto bg-white border-4 border-gray-200 rounded-full flex items-center justify-center mb-6 shadow-lg text-2xl font-bold text-gray-400 font-heading hover:border-primary transition-colors cursor-default">04</div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-2">Inspection</h4>
+                        <p class="text-sm text-gray-500">Perform quality checks at every major stage.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="relative z-10 text-center" data-aos="fade-up" data-aos-delay="500">
+                        <div class="w-20 h-20 mx-auto bg-primary text-white border-4 border-primary rounded-full flex items-center justify-center mb-6 shadow-lg text-2xl font-bold font-heading">05</div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-2">Handover</h4>
+                        <p class="text-sm text-gray-500">Complete the project and hand it over to the customer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section id="statistics" class="py-16 bg-primary">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
+                <div class="px-4">
+                    <div class="font-heading text-4xl lg:text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="10" data-suffix="+">0</span></div>
+                    <div class="text-white/90 font-medium uppercase tracking-wider text-sm">Projects Completed</div>
+                </div>
+                <div class="px-4">
+                    <div class="font-heading text-4xl lg:text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="5" data-suffix="+">0</span></div>
+                    <div class="text-white/90 font-medium uppercase tracking-wider text-sm">Years of Experience</div>
+                </div>
+                <div class="px-4">
+                    <div class="font-heading text-4xl lg:text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="100" data-suffix="%">0</span></div>
+                    <div class="text-white/90 font-medium uppercase tracking-wider text-sm">Quality Commitment</div>
+                </div>
+                <div class="px-4">
+                    <div class="font-heading text-4xl lg:text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="100" data-suffix="%">0</span></div>
+                    <div class="text-white/90 font-medium uppercase tracking-wider text-sm">Customer Focus</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 lg:py-28 bg-light">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-primary font-semibold tracking-wide text-sm uppercase mb-2 block">Testimonials</span>
+                <h2 class="font-heading text-4xl lg:text-5xl font-bold text-dark mb-4">What Our Clients Say</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-quote-right text-5xl text-gray-100 absolute top-6 right-6"></i>
+                    <div class="flex text-primary mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic relative z-10">"Renuga Construction handled our house project professionally from start to finish. The quality of work and attention to detail were excellent. Highly recommended!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl">H</div>
+                        <div>
+                            <h5 class="font-heading font-bold text-dark">Happy Homeowner</h5>
+                            <span class="text-xs text-gray-500">Residential Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-quote-right text-5xl text-gray-100 absolute top-6 right-6"></i>
+                    <div class="flex text-primary mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic relative z-10">"The team at Renuga Construction built our commercial space exactly as envisioned. They were on time and transparent with all the costs involved."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl">B</div>
+                        <div>
+                            <h5 class="font-heading font-bold text-dark">Business Owner</h5>
+                            <span class="text-xs text-gray-500">Commercial Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-quote-right text-5xl text-gray-100 absolute top-6 right-6"></i>
+                    <div class="flex text-primary mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic relative z-10">"We hired them for a complete structural renovation. Their engineers are knowledgeable and they ensured maximum safety throughout the project."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl">P</div>
+                        <div>
+                            <h5 class="font-heading font-bold text-dark">Property Investor</h5>
+                            <span class="text-xs text-gray-500">Renovation Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 cta-bg relative text-center">
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-6" data-aos="fade-up">Ready to Build Your Dream Project?</h2>
+            <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Let's turn your ideas into a strong, beautiful and lasting structure.</p>
+            <a href="#quote" class="inline-block bg-white text-primary hover:bg-dark hover:text-white px-8 py-4 rounded font-bold text-lg transition-colors shadow-lg" data-aos="fade-up" data-aos-delay="200">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-28 bg-white relative">
+        <div id="quote" class="absolute -top-20"></div> <!-- Anchor offset -->
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:w-1/3" data-aos="fade-right">
+                    <span class="text-primary font-semibold tracking-wide text-sm uppercase mb-2 block">Contact Us</span>
+                    <h2 class="font-heading text-4xl font-bold text-dark mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Have a project in mind? Contact Renuga Construction today to discuss your requirements and get a professional estimate.</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-50 text-primary rounded-full flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4 class="font-heading font-bold text-dark">Location</h4>
+                                <p class="text-gray-600">Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-50 text-primary rounded-full flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4 class="font-heading font-bold text-dark">Phone</h4>
+                                <p class="text-gray-600">+91 XXXXX XXXXX</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-50 text-primary rounded-full flex items-center justify-center shrink-0 text-xl"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4 class="font-heading font-bold text-dark">Email</h4>
+                                <p class="text-gray-600">info@renugaconstruction.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:w-2/3 bg-white rounded-xl shadow-xl p-8 border border-gray-100" data-aos="fade-left">
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-6">Request a Quote</h3>
+                    <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Quote Request Submitted Successfully!');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Your Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Your Email">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Project Type</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" required>
+                                    <option value="" disabled selected>Select Project Type</option>
+                                    <option value="residential">Residential Construction</option>
+                                    <option value="commercial">Commercial Construction</option>
+                                    <option value="renovation">Renovation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primaryDark text-white font-bold py-4 rounded-lg transition-colors shadow-md">Request a Quote</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="mt-16 rounded-xl overflow-hidden shadow-md h-96 bg-gray-200 relative" data-aos="fade-up">
+                <!-- Using an iframe placeholder for map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.35166299103!2d78.1093156!3d9.9213824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475fc1b08e50b!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 pt-16 pb-8 border-t-4 border-primary">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Brand -->
+                <div>
+                    <a href="#" class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary flex items-center justify-center rounded">
+                            <i class="fa-solid fa-building text-white text-sm"></i>
+                        </div>
+                        <span class="font-heading font-bold text-2xl text-white tracking-tight">Renuga<span class="text-primary">.</span></span>
+                    </a>
+                    <p class="text-sm mb-6 leading-relaxed">Renuga Construction delivers reliable, high-quality construction solutions with excellence, safety and customer satisfaction at every stage.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Home</a></li>
+                        <li><a href="#about" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> About Us</a></li>
+                        <li><a href="#projects" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Our Projects</a></li>
+                        <li><a href="#why-us" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Why Choose Us</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Residential Construction</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Commercial Construction</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Building Renovation</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Civil Engineering</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Turnkey Construction</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1.5 text-primary"></i>
+                            <span>Tamil Nadu, India</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <span>+91 XXXXX XXXXX</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span>info@renugaconstruction.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Renuga Construction. All Rights Reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="#" class="floating-btn floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+910000000000" class="floating-btn floating-call md:hidden" aria-label="Call Us">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
